@@ -16,7 +16,7 @@
         <b-button variant="primary" @click="submitAnswer" :disabled="selectedIndex === null || answered">
           Responder
         </b-button>
-        <b-button @click="next" variant="success">
+        <b-button @click="next" :disabled="selectedIndex === null" variant="success">
           Siguiente pregunta
         </b-button>
       </b-jumbotron>
